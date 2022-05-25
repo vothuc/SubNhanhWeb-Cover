@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubNhanh Cover</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/fantasyFilm.css">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- start header -->
+
+    <header class="header">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+            <nav class="navbar">
+                
+                <a href="" class="active item">Home</a>
+                <div class = "navbar__dropdown item">
+                    Thể Loại
+                    <div class="subnav__type">
+                        <a href="./phimPhieuLuu.html" class="subnav__type__all">Phim Phiêu lưu</a>
+                        <a class="subnav__type__all">Phim Tình cảm</a>
+                        <a class="subnav__type__all">Phim Hài hước</a>
+                        <a class="subnav__type__all">Phim Viễn tưởng </a>
+                        <a class="subnav__type__all">Phim Chiến tranh</a>
+                        <a class="subnav__type__all">Phim Châu tinh trì</a>
+                        <a class="subnav__type__all">Phim Thể thao</a>
+                        <a class="subnav__type__all">Phim Hành động</a>
+                        <a class="subnav__type__all">Phim Hoạt hình</a>
+                        <a class="subnav__type__all">Phim Hình sự </a>
+                        <a class="subnav__type__all">Phim Thần thoại</a>
+                        <a class="subnav__type__all">Phim Âm nhạc</a>
+                        <a class="subnav__type__all">Phim Siêu nhiên</a>
+                        <a class="subnav__type__all">Phim Khác</a>
+                        <a class="subnav__type__all">Phim Kinh dị </a>
+                        <a class="subnav__type__all">Phim Võ thuật </a>
+                        <a class="subnav__type__all">Phim Tâm lý</a>
+                        <a class="subnav__type__all">Phim Cổ trang </a>
+                        <a class="subnav__type__all">Phim Shows</a>
+                        <a class="subnav__type__all">Phim Tài liệu</a>
+                    </div>
+                </div>
+                <div class="navbar__dropdown item">
+                    Quốc Gia
+                    <div class="subnav__type">
+                        <a class="subnav__type__all">Trung quốc</a>
+                        <a class="subnav__type__all">Hàn quốc </a>
+                        <a class="subnav__type__all">Hồng Kông</a>
+                        <a class="subnav__type__all">Nhật Bản </a>
+                        <a class="subnav__type__all">việt Nam</a>
+                        <a class="subnav__type__all">Thái Lan</a>
+                        <a class="subnav__type__all">Khác</a>
+                        <a class="subnav__type__all">Đài Loan</a>
+                        <a class="subnav__type__all">Philippines</a>
+                    </div>
+                </div>
+                <a href="" class="item">Phim lẻ</a>
+                <a href="" class="item">Phim bộ</a>
+                <a href="" class="item">Phim chiếu rạp</a>
+            </nav>
+
+            <!-- <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div> -->
+    </header>
+
+    <!-- end header -->
+
+    <!-- start main -->
+
+    <div class="main">
+        
+        <div class="left-main">
+            <div class="heading haveBtn">
+                <span>PHIM BỘ MỚI</span>
+                <div class="Button">
+                    <div class="btn on" id="allFilm" onclick="allFilm()">Tất cả phim</div>
+                    <div class="btn off" id="isComing" onclick="isComingFilm()">Sắp chiếu</div>
+                </div>
+            </div>
+            
+            <!-- start left-main -->
+            <section class="serial" id="serial">
+    
+                <div class="box-container">
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-1.jpg" alt="">
+                            <span>Tập 33 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-2.jpg" alt="">
+                            <span>Tập 12 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Xin Gọi Tôi Là Tổng Giám</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-3.jpg" alt="">
+                            <span>Tập 14 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Vô Thượng Thần Đế</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-4.jpg" alt="">
+                            <span>Tập 1 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thế Giới Hoàn Mỹ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-5.jpg" alt="">
+                            <span>Tập 4 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">365 Ngày</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-6.jpg" alt="">
+                            <span>Tập 9 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Long lĩnh Trùng Cốc</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-7.jpg" alt="">
+                            <span>Tập 7 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Công Tố Viên Chuyển Sinh</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-8.jpg" alt="">
+                            <span>Tập 23 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Độc Bộ Tiêu Dao</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-9.jpg" alt="">
+                            <span>Tập 12 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phục Yêu Tru Ma Kính</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-10.jpg" alt="">
+                            <span>Tập 32 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-11.jpg" alt="">
+                            <span>Tập 18 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phong Thần Đát Kỷ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-12.jpg" alt="">
+                            <span>Tập 10 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Câu Chuyện Thanh Xuân</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+
+            <!-- Phim sắp chiếu -->
+            <section class="isComingFilm" id="isComingFilm">
+    
+                <div class="box-container">
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/sapchieu1.jpg" alt="">
+                            <span>Tập 33 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/sapchieu2.jpg" alt="">
+                            <span>Tập 12 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Xin Gọi Tôi Là Tổng Giám</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu3.jpg" alt="">
+                            <span>Tập 14 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Vô Thượng Thần Đế</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu4.jpg" alt="">
+                            <span>Tập 1 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thế Giới Hoàn Mỹ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu5.jpg" alt="">
+                            <span>Tập 4 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">365 Ngày</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu6.jpg" alt="">
+                            <span>Tập 9 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Long lĩnh Trùng Cốc</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu7.png" alt="">
+                            <span>Tập 7 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Công Tố Viên Chuyển Sinh</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu8.jpg" alt="">
+                            <span>Tập 23 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Độc Bộ Tiêu Dao</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu9.jpg" alt="">
+                            <span>Tập 12 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phục Yêu Tru Ma Kính</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu10.png" alt="">
+                            <span>Tập 32 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu11.jpg" alt="">
+                            <span>Tập 18 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phong Thần Đát Kỷ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/sapchieu12.jpg" alt="">
+                            <span>Tập 10 VietSub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Câu Chuyện Thanh Xuân</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+    
+            <div class="heading">
+                <span>PHIM LẺ MỚI</span>
+            </div>
+            
+            <section class="film " id="popular">
+    
+                <div class="box-container">
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-1.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-2.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Xin Gọi Tôi Là Tổng Giám</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-3.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Vô Thượng Thần Đế</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-4.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thế Giới Hoàn Mỹ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-5.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">365 Ngày</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-6.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Long lĩnh Trùng Cốc</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-7.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Công Tố Viên Chuyển Sinh</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-8.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Độc Bộ Tiêu Dao</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-9.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phục Yêu Tru Ma Kính</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-10.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-11.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phong Thần Đát Kỷ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-12.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Câu Chuyện Thanh Xuân</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+    
+            <div class="heading">
+                <span>PHIM HOẠT HÌNH</span>
+            </div>
+            
+            <section class="film " id="popular">
+    
+                <div class="box-container">
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-1.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <div class="image">
+                            <img src="./img/ListFilm-2.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Xin Gọi Tôi Là Tổng Giám</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-3.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Vô Thượng Thần Đế</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-4.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thế Giới Hoàn Mỹ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-5.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+
+                        <div class="content">
+                            <a href="" class="film-link">365 Ngày</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-6.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Long lĩnh Trùng Cốc</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-7.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Công Tố Viên Chuyển Sinh</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-8.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Độc Bộ Tiêu Dao</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-9.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phục Yêu Tru Ma Kính</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-10.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Thả Thí Thiên Hạ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-11.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Phong Thần Đát Kỷ</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                        <div class="image">
+                            <img src="./img/ListFilm-12.jpg" alt="">
+                            <span>tập 33 vietsub</span>
+                        </div>
+                        <div class="content">
+                            <a href="" class="film-link">Câu Chuyện Thanh Xuân</a>
+                            <div class="price">
+                                <i class="fa-solid fa-tag"></i> 
+                                <span>Phim Cổ Trang</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+        </div>
+
+        <!-- end left-main -->
+        
+         <!-- start right-main -->
+        <div class="right-main">
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Nhập tên phim" name="search">
+                    <button type="submit" class="button">Tìm Kiếm</button>
+                </form>
+            </div>
+
+            <div class="heading-secondary">
+                <span>PHIM LẺ HOT</span>
+            </div>
+
+            <div class="hot-container">
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-2.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Xin Chào Hãy Gọi Tôi Là tổng Giám</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-3.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Thế Giới Hoàn Mỹ</a>
+                </div>
+                
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-4.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Long Lĩnh Trùng Cốc</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-5.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Thả Thí Thiên Hạ</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-7.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Phong Thần Đát Kỷ</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-9.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Câu Chuyện Thanh Xuân</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-10.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Xin Chào Hãy Gọi Tôi Là tổng Giám</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-12.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Công Tố Viên Chuyển Sinh</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-7.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Phục Yêu Tru Ma Kính</a>
+                </div>
+            </div>
+
+
+            <div class="heading-secondary">
+                <span>PHIM BỘ HOT</span>
+            </div>
+
+            <div class="hot-container">
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-2.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Xin Chào Hãy Gọi Tôi Là tổng Giám</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-3.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Thế Giới Hoàn Mỹ</a>
+                </div>
+                
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-4.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Long Lĩnh Trùng Cốc</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-5.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Thả Thí Thiên Hạ</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-7.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Phong Thần Đát Kỷ</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-9.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Câu Chuyện Thanh Xuân</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-10.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Xin Chào Hãy Gọi Tôi Là tổng Giám</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-12.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Công Tố Viên Chuyển Sinh</a>
+                </div>
+
+                <div class="hot-block">
+                    <a href="#" class="img">
+                        <img src="./img/ListFilm-7.jpg" alt="">
+                    </a>
+                    <a href="#" class="hotFilm-name">Phục Yêu Tru Ma Kính</a>
+                </div>
+            </div>
+        </div>
+        <!-- end right-main -->
+    </div>
+
+    <!-- end main -->
+
+    <footer class="footer">
+        <div class="box">
+            <a href="#home"> home</a>
+            <a href="#about"> Bản quyền</a>
+            <a href="#popular"> Liên hệ ad</a>
+            <a href="#menu"> Phim bộ</a>
+            <a href="#order"> Phim lẻ</a>
+            <a href="#blogs"> Phim chiếu rạp</a>
+        </div>
+
+        <div class="bottom">
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
